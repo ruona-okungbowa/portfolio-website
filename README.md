@@ -1,4 +1,4 @@
-# ruona-okungbowa's Portfolio Website
+# Ruona Okungbowa's Portfolio Website
 
 [![Live Site](https://img.shields.io/badge/Live-Site-blue?style=for-the-badge)](https://ruona-okungbowa.github.io/portfolio-website)
 [![GitHub](https://img.shields.io/badge/GitHub-Profile-black?style=for-the-badge&logo=github)](https://github.com/ruona-okungbowa)
@@ -224,12 +224,12 @@ This portfolio is open source and available under the [MIT License](LICENSE).
 
 ## 🙏 Credits
 
-- Generated with [GitStory](https://gitstory.dev)
+- Generated with [CodeCraft](https://codecraft.dev)
 - Icons from [Devicon](https://devicon.dev)
 - Styled with [Tailwind CSS](https://tailwindcss.com)
 
 ---
 
-**Made with ❤️ by ruona-okungbowa**
+**Made with ❤️ by Ruona Okungbowa**
 
 *Last updated: 26/11/2025*
