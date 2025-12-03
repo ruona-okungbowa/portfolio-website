@@ -1,4 +1,4 @@
-# Ruona Okungbowa's Portfolio Website
+# Ruona O's Portfolio Website
 
 [![Live Site](https://img.shields.io/badge/Live-Site-blue?style=for-the-badge)](https://ruona-okungbowa.github.io/portfolio-website)
 [![GitHub](https://img.shields.io/badge/GitHub-Profile-black?style=for-the-badge&logo=github)](https://github.com/ruona-okungbowa)
@@ -230,6 +230,6 @@ This portfolio is open source and available under the [MIT License](LICENSE).
 
 ---
 
-**Made with ❤️ by Ruona Okungbowa**
+**Made with ❤️ by Ruona O**
 
-*Last updated: 26/11/2025*
+*Last updated: 12/3/2025*
