@@ -52,10 +52,10 @@
         --accent-primary: #9333ea;
         --accent-hover: #7e22ce;
         --accent-light: #f3e8ff;
-        --bg-primary: #ffffff;
-        --bg-secondary: #f8fafc;
+        --bg-primary: #f1f1f1;
+        --bg-secondary: #2d3748;
         --text-primary: #0f172a;
-        --text-secondary: #475569;
+        --text-secondary: #1f242b;
         --border-color: #e2e8f0;
       }
 
@@ -63,7 +63,8 @@
          Background Colors & Gradients
          ============================================ */
       body {
-        background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
+        /* Dynamic background based on accent color */
+        background: linear-gradient(180deg, #f3e8ff 0%, #e9d5ff 100%);
         color: var(--text-primary);
         position: relative;
         overflow-x: hidden;
@@ -150,7 +151,7 @@
 
       /* Navigation links */
       .nav-link:hover {
-        color: #0f172a !important;
+        color: #050815 !important;
       }
 
       /* Mobile menu */
@@ -166,8 +167,8 @@
 
       /* Project card enhancements */
       .project-card {
-        background: linear-gradient(135deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 100%);
-        border: 1px solid rgba(203, 213, 225, 1);
+        background: linear-gradient(135deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 100%);
+        border: 1px solid #d8b4fe;
         box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06), 0 1px 3px 0 rgba(0, 0, 0, 0.1);
         transition: all 0.3s ease;
       }
@@ -180,8 +181,8 @@
 
       /* Skill badge enhancements */
       .skill-badge {
-        background: linear-gradient(135deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 100%);
-        border: 1px solid rgba(203, 213, 225, 1);
+        background: linear-gradient(135deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 100%);
+        border: 1px solid #d8b4fe;
         box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06), 0 1px 3px 0 rgba(0, 0, 0, 0.1);
         transition: all 0.3s ease;
         position: relative;
@@ -244,12 +245,12 @@
     <!-- Navigation -->
     <nav
       class="fixed top-0 w-full z-50 backdrop-blur-md"
-      style="background: rgba(255, 255, 255, 0.9); border-bottom: 1px solid rgba(226, 232, 240, 1);"
+      style="background: rgba(243, 232, 255, 0.95); border-bottom: 1px solid #d8b4fe;"
     >
       <div
         class="max-w-4xl mx-auto px-6 py-4 flex justify-between items-center"
       >
-        <p class="text-sm font-medium" style="color: #64748b;">
+        <p class="text-sm font-medium" style="color: #050815;">
           Ruona O
         </p>
 
@@ -258,19 +259,19 @@
           <a
             href="#home"
             class="text-sm transition-all nav-link"
-            style="color: #64748b;"
+            style="color: #1e293b;"
             >Home</a
           >
           <a
             href="#projects"
             class="text-sm transition-all nav-link"
-            style="color: #64748b;"
+            style="color: #1e293b;"
             >Projects</a
           >
           <a
             href="#about"
             class="text-sm transition-all nav-link"
-            style="color: #64748b;"
+            style="color: #1e293b;"
             >About</a
           >
         </div>
@@ -279,7 +280,7 @@
         <button
           id="mobile-menu-btn"
           class="md:hidden transition"
-          style="color: #64748b;"
+          style="color: #1e293b;"
         >
           <svg
             class="w-6 h-6"
@@ -301,25 +302,25 @@
       <div
         id="mobile-menu"
         class="mobile-menu md:hidden backdrop-blur-md"
-        style="background: rgba(248, 250, 252, 0.95); border-top: 1px solid rgba(226, 232, 240, 1);"
+        style="background: rgba(233, 213, 255, 0.95); border-top: 1px solid #d8b4fe;"
       >
         <div class="max-w-4xl mx-auto px-6 py-4 flex flex-col gap-4">
           <a
             href="#home"
             class="text-sm transition-all mobile-menu-link"
-            style="color: #64748b;"
+            style="color: #1e293b;"
             >Home</a
           >
           <a
             href="#projects"
             class="text-sm transition-all mobile-menu-link"
-            style="color: #64748b;"
+            style="color: #1e293b;"
             >Projects</a
           >
           <a
             href="#about"
             class="text-sm transition-all mobile-menu-link"
-            style="color: #64748b;"
+            style="color: #1e293b;"
             >About</a
           >
         </div>
@@ -336,36 +337,41 @@
     >
       <!-- EDIT HERE: Your name -->
       <h1
-        class="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-white to-gray-400 bg-clip-text text-transparent fade-in-up"
-        style="animation-delay: 0.1s"
+        class="text-5xl md:text-7xl font-bold mb-6 fade-in-up"
+        style="animation-delay: 0.1s; color: #050815;"
       >
         Ruona O
       </h1>
       <!-- EDIT HERE: Your job title -->
       <p
-        class="text-xl md:text-3xl text-blue-400 mb-8 font-semibold fade-in-up"
-        style="animation-delay: 0.3s"
+        class="text-xl md:text-3xl mb-8 font-semibold fade-in-up"
+        style="animation-delay: 0.3s; color: #9333ea;"
       >
         Software Engineer
       </p>
       <!-- EDIT HERE: Your bio/introduction -->
       <p
-        class="text-base md:text-lg text-gray-300 leading-relaxed mb-10 max-w-2xl fade-in-up"
-        style="animation-delay: 0.5s"
+        class="text-base md:text-lg leading-relaxed mb-10 max-w-2xl fade-in-up"
+        style="animation-delay: 0.5s; color: #1e293b;"
       >
         Software engineer passionate about building innovative web applications and solving complex problems.
       </p>
       <div class="flex flex-col sm:flex-row gap-4 items-center justify-center sm:justify-start">
       <a
         href="#projects"
-        class="inline-block bg-blue-500 text-white px-8 py-4 rounded-lg font-semibold hover:bg-blue-600 transition-all hover:scale-105 w-fit fade-in-up"
-        style="animation-delay: 0.7s"
+        class="inline-block text-white px-8 py-4 rounded-lg font-semibold transition-all hover:scale-105 w-fit fade-in-up"
+        style="animation-delay: 0.7s; background-color: #9333ea;"
+        onmouseover="this.style.backgroundColor='#7e22ce'"
+        onmouseout="this.style.backgroundColor='#9333ea'"
       >
         View my Work
       </a>
       <a href="https://github.com/ruona-okungbowa" 
                target="_blank"
-               class="inline-block bg-blue-200 text-black px-8 py-4 rounded-lg font-semibold hover:bg-blue-100 transition-all hover:scale-105 w-fit fade-in-up">
+               class="inline-block px-8 py-4 rounded-lg font-semibold transition-all hover:scale-105 w-fit fade-in-up"
+               style="background-color: #9333ea1a; color: #9333ea; border: 2px solid #9333ea4d;"
+               onmouseover="this.style.backgroundColor='#9333ea33'"
+               onmouseout="this.style.backgroundColor='#9333ea1a'">
               GitHub Profile
             </a>
       </div>
@@ -393,10 +399,10 @@
                   <div class="flex flex-col md:flex-row gap-8">
                     <!-- Main Content -->
                     <div class="flex-1">
-                      <h3 class="text-3xl md:text-4xl font-bold text-blue-400 mb-4">pulse</h3>
-                      <p class="text-gray-300 leading-relaxed mb-6">Pulse is an innovative team health platform that leverages CSS, JavaScript, and TypeScript to enhance collaboration and well-being within organizations, providing actionable insights and fostering a culture of continuous improvement. By seamlessly integrating user-friendly interfaces with robust functionality, Pulse empowers teams to monitor and boost their collective health effectively.</p>
+                      <h3 class="text-3xl md:text-4xl font-bold mb-4" style="color: #9333ea;">codecraft</h3>
+                      <p class="leading-relaxed mb-6" style="color: #1e293b;">Codecraft revolutionizes career advancement by leveraging AI to optimize job matching, automate resume creation, and enhance interview preparation, all through a seamless web interface built with CSS, HTML, and JavaScript. This innovative application empowers users to confidently navigate their career paths and secure their ideal positions.</p>
                       <div class="flex gap-4 mb-6">
-                        <a href="https://github.com/ruona-okungbowa/pulse" target="_blank" class="flex items-center gap-2 text-gray-300 hover:text-blue-400 transition">
+                        <a href="https://github.com/ruona-okungbowa/codecraft" target="_blank" class="flex items-center gap-2 transition" style="color: #1e293b;" onmouseover="this.style.color='#9333ea'" onmouseout="this.style.color='#1e293b'">
                           <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
                             <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
                           </svg>
@@ -413,9 +419,9 @@
                           <svg class="w-6 h-6 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
                             <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
                           </svg>
-                          <span class="text-3xl font-bold text-white">0</span>
+                          <span class="text-3xl font-bold" style="color: #050815;">0</span>
                         </div>
-                        <p class="text-sm text-gray-400">Stars</p>
+                        <p class="text-sm" style="color: #1e293b;">Stars</p>
                       </div>
 
                       <!-- Forks -->
@@ -424,9 +430,9 @@
                           <svg class="w-5 h-5 text-blue-400" fill="currentColor" viewBox="0 0 16 16">
                             <path d="M5 5.372v.878c0 .414.336.75.75.75h4.5a.75.75 0 0 0 .75-.75v-.878a2.25 2.25 0 1 1 1.5 0v.878a2.25 2.25 0 0 1-2.25 2.25h-1.5v2.128a2.251 2.251 0 1 1-1.5 0V8.5h-1.5A2.25 2.25 0 0 1 3.5 6.25v-.878a2.25 2.25 0 1 1 1.5 0ZM5 3.25a.75.75 0 1 0-1.5 0 .75.75 0 0 0 1.5 0Zm6.75.75a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm-3 8.75a.75.75 0 1 0-1.5 0 .75.75 0 0 0 1.5 0Z"/>
                           </svg>
-                          <span class="text-2xl font-bold text-white">0</span>
+                          <span class="text-2xl font-bold" style="color: #050815;">0</span>
                         </div>
-                        <p class="text-sm text-gray-400">Forks</p>
+                        <p class="text-sm" style="color: #1e293b;">Forks</p>
                       </div>
 
                       <!-- Last Updated -->
@@ -436,19 +442,115 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
                           </svg>
                         </div>
-                        <p class="text-sm font-medium text-white">Recently</p>
-                        <p class="text-xs text-gray-400">Updated</p>
+                        <p class="text-sm font-medium" style="color: #050815;">Recently</p>
+                        <p class="text-xs" style="color: #1e293b;">Updated</p>
                       </div>
 
                       <!-- Language Breakdown -->
                       <div>
-                        <p class="text-sm text-gray-400 mb-3 text-center">Languages</p>
+                        <p class="text-sm mb-3 text-center" style="color: #1e293b;">Languages</p>
                         <div class="space-y-2">
                           
                             <div>
                               <div class="flex justify-between text-xs mb-1">
-                                <span class="text-gray-300">JavaScript</span>
-                                <span class="text-gray-400">67%</span>
+                                <span style="color: #1e293b;">TypeScript</span>
+                                <span style="color: #1e293b;">97%</span>
+                              </div>
+                              <div class="lang-bar">
+                                <div class="lang-bar-fill" style="width: 96.90386941821%"></div>
+                              </div>
+                            </div>
+                          
+                            <div>
+                              <div class="flex justify-between text-xs mb-1">
+                                <span style="color: #1e293b;">HTML</span>
+                                <span style="color: #1e293b;">2%</span>
+                              </div>
+                              <div class="lang-bar">
+                                <div class="lang-bar-fill" style="width: 2.4070097665720027%"></div>
+                              </div>
+                            </div>
+                          
+                            <div>
+                              <div class="flex justify-between text-xs mb-1">
+                                <span style="color: #1e293b;">CSS</span>
+                                <span style="color: #1e293b;">1%</span>
+                              </div>
+                              <div class="lang-bar">
+                                <div class="lang-bar-fill" style="width: 0.6440976109511897%"></div>
+                              </div>
+                            </div>
+                          
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="sticky top-20 mb-16 animate-on-scroll">
+              <div class="max-w-4xl mx-auto px-6">
+                <div class="project-card border border-slate-700 rounded-2xl overflow-hidden p-8 relative">
+                  <div class="flex flex-col md:flex-row gap-8">
+                    <!-- Main Content -->
+                    <div class="flex-1">
+                      <h3 class="text-3xl md:text-4xl font-bold mb-4" style="color: #9333ea;">pulse</h3>
+                      <p class="leading-relaxed mb-6" style="color: #1e293b;">Pulse is an innovative team health platform that leverages CSS, JavaScript, and TypeScript to enhance collaboration and well-being among team members, enabling real-time feedback and metrics-driven insights to foster a thriving workplace culture. By implementing responsive design and robust functionality, Pulse transforms how teams monitor their collective health and productivity.</p>
+                      <div class="flex gap-4 mb-6">
+                        <a href="https://github.com/ruona-okungbowa/pulse" target="_blank" class="flex items-center gap-2 transition" style="color: #1e293b;" onmouseover="this.style.color='#9333ea'" onmouseout="this.style.color='#1e293b'">
+                          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                          </svg>
+                          View Source
+                        </a>
+                      </div>
+                    </div>
+
+                    <!-- Stats Panel -->
+                    <div class="md:w-48 flex-shrink-0 space-y-6">
+                      <!-- Stars -->
+                      <div class="text-center">
+                        <div class="flex items-center justify-center gap-2 mb-2">
+                          <svg class="w-6 h-6 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                          </svg>
+                          <span class="text-3xl font-bold" style="color: #050815;">0</span>
+                        </div>
+                        <p class="text-sm" style="color: #1e293b;">Stars</p>
+                      </div>
+
+                      <!-- Forks -->
+                      <div class="text-center">
+                        <div class="flex items-center justify-center gap-2 mb-2">
+                          <svg class="w-5 h-5 text-blue-400" fill="currentColor" viewBox="0 0 16 16">
+                            <path d="M5 5.372v.878c0 .414.336.75.75.75h4.5a.75.75 0 0 0 .75-.75v-.878a2.25 2.25 0 1 1 1.5 0v.878a2.25 2.25 0 0 1-2.25 2.25h-1.5v2.128a2.251 2.251 0 1 1-1.5 0V8.5h-1.5A2.25 2.25 0 0 1 3.5 6.25v-.878a2.25 2.25 0 1 1 1.5 0ZM5 3.25a.75.75 0 1 0-1.5 0 .75.75 0 0 0 1.5 0Zm6.75.75a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm-3 8.75a.75.75 0 1 0-1.5 0 .75.75 0 0 0 1.5 0Z"/>
+                          </svg>
+                          <span class="text-2xl font-bold" style="color: #050815;">0</span>
+                        </div>
+                        <p class="text-sm" style="color: #1e293b;">Forks</p>
+                      </div>
+
+                      <!-- Last Updated -->
+                      <div class="text-center">
+                        <div class="flex items-center justify-center gap-2 mb-2">
+                          <svg class="w-5 h-5 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+                          </svg>
+                        </div>
+                        <p class="text-sm font-medium" style="color: #050815;">Recently</p>
+                        <p class="text-xs" style="color: #1e293b;">Updated</p>
+                      </div>
+
+                      <!-- Language Breakdown -->
+                      <div>
+                        <p class="text-sm mb-3 text-center" style="color: #1e293b;">Languages</p>
+                        <div class="space-y-2">
+                          
+                            <div>
+                              <div class="flex justify-between text-xs mb-1">
+                                <span style="color: #1e293b;">JavaScript</span>
+                                <span style="color: #1e293b;">67%</span>
                               </div>
                               <div class="lang-bar">
                                 <div class="lang-bar-fill" style="width: 67.49654218533887%"></div>
@@ -457,8 +559,8 @@
                           
                             <div>
                               <div class="flex justify-between text-xs mb-1">
-                                <span class="text-gray-300">TypeScript</span>
-                                <span class="text-gray-400">28%</span>
+                                <span style="color: #1e293b;">TypeScript</span>
+                                <span style="color: #1e293b;">28%</span>
                               </div>
                               <div class="lang-bar">
                                 <div class="lang-bar-fill" style="width: 28.42323651452282%"></div>
@@ -467,8 +569,8 @@
                           
                             <div>
                               <div class="flex justify-between text-xs mb-1">
-                                <span class="text-gray-300">CSS</span>
-                                <span class="text-gray-400">4%</span>
+                                <span style="color: #1e293b;">CSS</span>
+                                <span style="color: #1e293b;">4%</span>
                               </div>
                               <div class="lang-bar">
                                 <div class="lang-bar-fill" style="width: 4.080221300138312%"></div>
@@ -489,10 +591,10 @@
                   <div class="flex flex-col md:flex-row gap-8">
                     <!-- Main Content -->
                     <div class="flex-1">
-                      <h3 class="text-3xl md:text-4xl font-bold text-blue-400 mb-4">codecraft</h3>
-                      <p class="text-gray-300 leading-relaxed mb-6">codecraft harnesses AI to revolutionize career advancement by seamlessly integrating job matching, dynamic resume creation, and tailored interview preparation, empowering users to elevate their professional journeys with a user-friendly interface crafted using CSS, HTML, and JavaScript.</p>
+                      <h3 class="text-3xl md:text-4xl font-bold mb-4" style="color: #9333ea;">recode</h3>
+                      <p class="leading-relaxed mb-6" style="color: #1e293b;">Recode is an innovative mobile app that empowers developers to sharpen their coding skills and ace technical interviews by delivering structured practice sessions and real-time AI feedback, leveraging the power of CSS, JavaScript, and TypeScript for a seamless user experience. This project exemplifies my ability to integrate advanced technologies to create impactful learning tools that enhance professional growth in the tech industry.</p>
                       <div class="flex gap-4 mb-6">
-                        <a href="https://github.com/ruona-okungbowa/codecraft" target="_blank" class="flex items-center gap-2 text-gray-300 hover:text-blue-400 transition">
+                        <a href="https://github.com/ruona-okungbowa/recode" target="_blank" class="flex items-center gap-2 transition" style="color: #1e293b;" onmouseover="this.style.color='#9333ea'" onmouseout="this.style.color='#1e293b'">
                           <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
                             <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
                           </svg>
@@ -509,9 +611,9 @@
                           <svg class="w-6 h-6 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
                             <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
                           </svg>
-                          <span class="text-3xl font-bold text-white">0</span>
+                          <span class="text-3xl font-bold" style="color: #050815;">0</span>
                         </div>
-                        <p class="text-sm text-gray-400">Stars</p>
+                        <p class="text-sm" style="color: #1e293b;">Stars</p>
                       </div>
 
                       <!-- Forks -->
@@ -520,9 +622,9 @@
                           <svg class="w-5 h-5 text-blue-400" fill="currentColor" viewBox="0 0 16 16">
                             <path d="M5 5.372v.878c0 .414.336.75.75.75h4.5a.75.75 0 0 0 .75-.75v-.878a2.25 2.25 0 1 1 1.5 0v.878a2.25 2.25 0 0 1-2.25 2.25h-1.5v2.128a2.251 2.251 0 1 1-1.5 0V8.5h-1.5A2.25 2.25 0 0 1 3.5 6.25v-.878a2.25 2.25 0 1 1 1.5 0ZM5 3.25a.75.75 0 1 0-1.5 0 .75.75 0 0 0 1.5 0Zm6.75.75a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm-3 8.75a.75.75 0 1 0-1.5 0 .75.75 0 0 0 1.5 0Z"/>
                           </svg>
-                          <span class="text-2xl font-bold text-white">0</span>
+                          <span class="text-2xl font-bold" style="color: #050815;">0</span>
                         </div>
-                        <p class="text-sm text-gray-400">Forks</p>
+                        <p class="text-sm" style="color: #1e293b;">Forks</p>
                       </div>
 
                       <!-- Last Updated -->
@@ -532,115 +634,19 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
                           </svg>
                         </div>
-                        <p class="text-sm font-medium text-white">Recently</p>
-                        <p class="text-xs text-gray-400">Updated</p>
+                        <p class="text-sm font-medium" style="color: #050815;">Recently</p>
+                        <p class="text-xs" style="color: #1e293b;">Updated</p>
                       </div>
 
                       <!-- Language Breakdown -->
                       <div>
-                        <p class="text-sm text-gray-400 mb-3 text-center">Languages</p>
+                        <p class="text-sm mb-3 text-center" style="color: #1e293b;">Languages</p>
                         <div class="space-y-2">
                           
                             <div>
                               <div class="flex justify-between text-xs mb-1">
-                                <span class="text-gray-300">TypeScript</span>
-                                <span class="text-gray-400">97%</span>
-                              </div>
-                              <div class="lang-bar">
-                                <div class="lang-bar-fill" style="width: 96.8885726819903%"></div>
-                              </div>
-                            </div>
-                          
-                            <div>
-                              <div class="flex justify-between text-xs mb-1">
-                                <span class="text-gray-300">HTML</span>
-                                <span class="text-gray-400">2%</span>
-                              </div>
-                              <div class="lang-bar">
-                                <div class="lang-bar-fill" style="width: 2.4189018339460513%"></div>
-                              </div>
-                            </div>
-                          
-                            <div>
-                              <div class="flex justify-between text-xs mb-1">
-                                <span class="text-gray-300">CSS</span>
-                                <span class="text-gray-400">1%</span>
-                              </div>
-                              <div class="lang-bar">
-                                <div class="lang-bar-fill" style="width: 0.6472798382488397%"></div>
-                              </div>
-                            </div>
-                          
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            <div class="sticky top-20 mb-16 animate-on-scroll">
-              <div class="max-w-4xl mx-auto px-6">
-                <div class="project-card border border-slate-700 rounded-2xl overflow-hidden p-8 relative">
-                  <div class="flex flex-col md:flex-row gap-8">
-                    <!-- Main Content -->
-                    <div class="flex-1">
-                      <h3 class="text-3xl md:text-4xl font-bold text-blue-400 mb-4">recode</h3>
-                      <p class="text-gray-300 leading-relaxed mb-6">Recode is an innovative mobile app that empowers developers to elevate their coding skills and ace technical interviews through structured practice sessions and real-time AI feedback, leveraging advanced CSS, JavaScript, and TypeScript technologies to deliver a seamless user experience.</p>
-                      <div class="flex gap-4 mb-6">
-                        <a href="https://github.com/ruona-okungbowa/recode" target="_blank" class="flex items-center gap-2 text-gray-300 hover:text-blue-400 transition">
-                          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-                          </svg>
-                          View Source
-                        </a>
-                      </div>
-                    </div>
-
-                    <!-- Stats Panel -->
-                    <div class="md:w-48 flex-shrink-0 space-y-6">
-                      <!-- Stars -->
-                      <div class="text-center">
-                        <div class="flex items-center justify-center gap-2 mb-2">
-                          <svg class="w-6 h-6 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
-                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
-                          </svg>
-                          <span class="text-3xl font-bold text-white">0</span>
-                        </div>
-                        <p class="text-sm text-gray-400">Stars</p>
-                      </div>
-
-                      <!-- Forks -->
-                      <div class="text-center">
-                        <div class="flex items-center justify-center gap-2 mb-2">
-                          <svg class="w-5 h-5 text-blue-400" fill="currentColor" viewBox="0 0 16 16">
-                            <path d="M5 5.372v.878c0 .414.336.75.75.75h4.5a.75.75 0 0 0 .75-.75v-.878a2.25 2.25 0 1 1 1.5 0v.878a2.25 2.25 0 0 1-2.25 2.25h-1.5v2.128a2.251 2.251 0 1 1-1.5 0V8.5h-1.5A2.25 2.25 0 0 1 3.5 6.25v-.878a2.25 2.25 0 1 1 1.5 0ZM5 3.25a.75.75 0 1 0-1.5 0 .75.75 0 0 0 1.5 0Zm6.75.75a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm-3 8.75a.75.75 0 1 0-1.5 0 .75.75 0 0 0 1.5 0Z"/>
-                          </svg>
-                          <span class="text-2xl font-bold text-white">0</span>
-                        </div>
-                        <p class="text-sm text-gray-400">Forks</p>
-                      </div>
-
-                      <!-- Last Updated -->
-                      <div class="text-center">
-                        <div class="flex items-center justify-center gap-2 mb-2">
-                          <svg class="w-5 h-5 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
-                          </svg>
-                        </div>
-                        <p class="text-sm font-medium text-white">Recently</p>
-                        <p class="text-xs text-gray-400">Updated</p>
-                      </div>
-
-                      <!-- Language Breakdown -->
-                      <div>
-                        <p class="text-sm text-gray-400 mb-3 text-center">Languages</p>
-                        <div class="space-y-2">
-                          
-                            <div>
-                              <div class="flex justify-between text-xs mb-1">
-                                <span class="text-gray-300">TypeScript</span>
-                                <span class="text-gray-400">99%</span>
+                                <span style="color: #1e293b;">TypeScript</span>
+                                <span style="color: #1e293b;">99%</span>
                               </div>
                               <div class="lang-bar">
                                 <div class="lang-bar-fill" style="width: 99.35576997024356%"></div>
@@ -649,8 +655,8 @@
                           
                             <div>
                               <div class="flex justify-between text-xs mb-1">
-                                <span class="text-gray-300">JavaScript</span>
-                                <span class="text-gray-400">1%</span>
+                                <span style="color: #1e293b;">JavaScript</span>
+                                <span style="color: #1e293b;">1%</span>
                               </div>
                               <div class="lang-bar">
                                 <div class="lang-bar-fill" style="width: 0.6093268417347476%"></div>
@@ -659,8 +665,8 @@
                           
                             <div>
                               <div class="flex justify-between text-xs mb-1">
-                                <span class="text-gray-300">CSS</span>
-                                <span class="text-gray-400">0%</span>
+                                <span style="color: #1e293b;">CSS</span>
+                                <span style="color: #1e293b;">0%</span>
                               </div>
                               <div class="lang-bar">
                                 <div class="lang-bar-fill" style="width: 0.03490318802169913%"></div>
@@ -709,6 +715,20 @@
           <div class="skill-badge border border-slate-700 rounded-xl px-6 py-5 cursor-default flex flex-col items-center gap-3 relative">
             <!-- Tooltip -->
             <div class="skill-tooltip">
+              <div class="text-blue-400 font-semibold mb-1">HTML</div>
+              <div class="text-gray-300 text-xs">Used in 1 project</div>
+            </div>
+            
+            <!-- Icon -->
+            <i class="devicon-html5-plain skill-icon colored"></i>
+            
+            <!-- Skill Name -->
+            <span class="text-base font-medium text-gray-200">HTML</span>
+          </div>
+        
+          <div class="skill-badge border border-slate-700 rounded-xl px-6 py-5 cursor-default flex flex-col items-center gap-3 relative">
+            <!-- Tooltip -->
+            <div class="skill-tooltip">
               <div class="text-blue-400 font-semibold mb-1">JavaScript</div>
               <div class="text-gray-300 text-xs">Used in 3 projects</div>
             </div>
@@ -734,20 +754,6 @@
             <span class="text-base font-medium text-gray-200">TypeScript</span>
           </div>
         
-          <div class="skill-badge border border-slate-700 rounded-xl px-6 py-5 cursor-default flex flex-col items-center gap-3 relative">
-            <!-- Tooltip -->
-            <div class="skill-tooltip">
-              <div class="text-blue-400 font-semibold mb-1">HTML</div>
-              <div class="text-gray-300 text-xs">Used in 1 project</div>
-            </div>
-            
-            <!-- Icon -->
-            <i class="devicon-html5-plain skill-icon colored"></i>
-            
-            <!-- Skill Name -->
-            <span class="text-base font-medium text-gray-200">HTML</span>
-          </div>
-        
       </div>
     </section>
 
@@ -761,14 +767,14 @@
       </h2>
       <div
         class="rounded-2xl p-8 md:p-12 animate-on-scroll"
-        style="background: linear-gradient(135deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 100%); border: 1px solid rgba(203, 213, 225, 1); box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06), 0 1px 3px 0 rgba(0, 0, 0, 0.1);"
+        style="background: linear-gradient(135deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 100%); border: 1px solid #d8b4fe; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06), 0 1px 3px 0 rgba(0, 0, 0, 0.1);"
       >
-        <p class="text-lg leading-relaxed mb-8" style="color: #475569">
-          Hi, I'm <span style="color: #0f172a; font-weight: 600;">Ruona O</span>, a
+        <p class="text-lg leading-relaxed mb-8" style="color: #1e293b">
+          Hi, I'm <span style="color: #050815; font-weight: 600;">Ruona O</span>, a
           passionate Software Engineer with a knack for crafting seamless
           digital experiences.
         </p>
-        <p class="text-lg leading-relaxed mb-10" style="color: #475569">
+        <p class="text-lg leading-relaxed mb-10" style="color: #1e293b">
           Over the years, I've honed my skills in building robust, user-friendly
           applications that not only meet the needs of users but also push the
           boundaries of what's possible.
@@ -783,7 +789,7 @@
               />
             </svg>
           </a>
-          <a href="mailto:{email}"  class="text-gray-400 hover:text-white transition">
+          <a href="mailto:ruonao5@gmail.com" class="text-gray-400 hover:text-white transition">
             <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
             </svg>
@@ -793,10 +799,10 @@
     </section>
 
     <!-- Footer -->
-    <footer class="mt-20" style="border-top: 1px solid rgba(226, 232, 240, 1); background: rgba(248, 250, 252, 0.5);">
+    <footer class="mt-20" style="border-top: 1px solid #d8b4fe; background: rgba(233, 213, 255, 0.5);">
       <div class="max-w-4xl mx-auto px-6 py-10 text-center">
-        <p class="mb-2" style="color: #64748b;"> © 2025 Ruona O. All rights reserved.</p>
-        <p class="text-sm" style="color: #94a3b8;">Generated with ❤️ CodeCraft </p>
+        <p class="mb-2" style="color: #1e293b;"> © 2025 Ruona O. All rights reserved.</p>
+        <p class="text-sm" style="color: #475569;">Generated with ❤️ CodeCraft </p>
       </div>
     </footer>
 
