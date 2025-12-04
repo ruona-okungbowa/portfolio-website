@@ -232,4 +232,4 @@ This portfolio is open source and available under the [MIT License](LICENSE).
 
 **Made with ❤️ by Ruona O**
 
-*Last updated: 12/3/2025*
+*Last updated: 12/4/2025*
